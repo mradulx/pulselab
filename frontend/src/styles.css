@@ -1,0 +1,29 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #e8eef7;
+  background: #0b0f14;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: radial-gradient(circle at 80% 0%, #172131 0, #0b0f14 42%); }
+.shell { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0; }
+header { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 36px; }
+.eyebrow { margin: 0 0 8px; color: #6f829a; font-size: 12px; letter-spacing: .16em; }
+h1, h2, p { margin-top: 0; }
+h1 { margin-bottom: 0; font-size: clamp(34px, 5vw, 58px); letter-spacing: -.05em; }
+h2 { margin: 8px 0 0; font-size: 24px; }
+.status { padding: 9px 12px; border: 1px solid #253344; border-radius: 999px; color: #a9b8c9; font-size: 12px; }
+.status i { display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: #48d597; box-shadow: 0 0 12px #48d597; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.card, .panel { border: 1px solid #1e2a38; background: rgba(15, 22, 31, .84); border-radius: 18px; box-shadow: 0 18px 60px rgba(0,0,0,.22); }
+.card { padding: 22px; }
+.card span, .panel-head span { color: #718399; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+.card strong { display: block; margin-top: 20px; font-size: 34px; letter-spacing: -.04em; }
+.card small { margin-left: 5px; color: #718399; font-size: 13px; font-weight: 500; }
+.panel { margin-top: 14px; padding: 26px; }
+.panel-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; }
+.muted { color: #56687d !important; letter-spacing: normal !important; text-transform: none !important; }
+.chart-placeholder { display: grid; place-items: center; height: 300px; margin-top: 24px; border: 1px dashed #273649; border-radius: 14px; color: #53657a; text-align: center; }
+@media (max-width: 760px) { .shell { padding: 36px 0; } header { align-items: start; flex-direction: column; } .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 460px) { .grid { grid-template-columns: 1fr; } }
